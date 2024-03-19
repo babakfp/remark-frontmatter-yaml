@@ -4,6 +4,7 @@
     "description": "A remark plugin to parse the YAML frontmatter.",
     "license": "MIT",
     "main": "./dist/main.js",
+    "repository": "github:babakfp/remark-frontmatter-yaml",
     "scripts": {
         "dev": "tsc -w",
         "build": "tsc"
