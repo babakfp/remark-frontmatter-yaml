@@ -33,3 +33,5 @@ export default (options: OptionsInput): Transformer => {
         }
     }
 }
+
+export type { OptionsInput as Options }
