@@ -1,11 +1,10 @@
 import * as v from "valibot"
-import { parse } from "yaml"
 import type { Transformer } from "unified"
 
 import { OptionsSchema } from "./schema.js"
 import type { OptionsInput, OptionsOutput } from "./types.js"
 import { frontmatterRegex } from "./frontmatterRegex.js"
-import { isObject } from "./isObject.js"
+import { parseYaml } from "./parseYaml.js"
 
 export default (options: OptionsInput): Transformer => {
     const options_: OptionsOutput = v.parse(OptionsSchema, options)
@@ -25,9 +24,7 @@ export default (options: OptionsInput): Transformer => {
         const content = match[1] || ""
         const contentWithFences = match[0]
 
-        const data = parse(content, options_.yaml)
-
-        file.data[options_.name] = isObject(data) ? data : {}
+        file.data[options_.name] = parseYaml(content, options_.yaml)
 
         if (options_.strip) {
             file.value = file_.slice(contentWithFences.length)
