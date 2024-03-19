@@ -1,4 +1,4 @@
-# Remark Frontmatter Parse YAML
+# Remark Frontmatter YAML
 
 A [remark](https://github.com/remarkjs/remark) plugin to parse the [YAML](https://yaml.org) frontmatter.
 
