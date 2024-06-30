@@ -1,6 +1,6 @@
 {
     "name": "remark-frontmatter-yaml",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "A remark plugin to parse the YAML frontmatter.",
     "license": "MIT",
     "main": "./dist/main.js",
