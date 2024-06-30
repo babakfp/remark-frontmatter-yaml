@@ -6,7 +6,7 @@ import type { OptionsInput, OptionsOutput } from "./types.js"
 import { frontmatterRegex } from "./frontmatterRegex.js"
 import { parseYaml } from "./parseYaml.js"
 
-export default (options: OptionsInput): Transformer => {
+export default (options?: OptionsInput): Transformer => {
     const options_: OptionsOutput = v.parse(OptionsSchema, options)
 
     return (_, file) => {
