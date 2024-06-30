@@ -44,22 +44,6 @@ console.log(file.data.frontmatter) // { message: "Hello, World!" }
 
 The name that is going to be used instead of `frontmatter` in `file.data.frontmatter`.
 
-#### `fence`
-
--   Type: `{ open: string; close: string }`
--   Default `{ open: "---", close: "---" }`
-
-The syntax that is used to wrap the content of frontmatter.
-
-Must be the same syntax that is used in [Remark Frontmatter](https://www.npmjs.com/package/remark-frontmatter)
-
-#### `strip`
-
--   Type: `boolean`
--   Default `true`
-
-Set to `false` to prevent removal of the frontmatter content.
-
 #### `yaml`
 
 -   Type: `Parameters<typeof yaml.parse>[2]`
