@@ -1,13 +1,14 @@
 {
     "name": "remark-frontmatter-yaml",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A remark plugin to parse the YAML frontmatter.",
     "license": "MIT",
     "main": "./dist/main.js",
     "repository": "github:babakfp/remark-frontmatter-yaml",
     "scripts": {
         "dev": "tsc -w",
-        "build": "tsc"
+        "build": "tsc",
+        "prepublishOnly": "tsc"
     },
     "dependencies": {
         "unified": "11.0.4",
